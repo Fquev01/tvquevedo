@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle del show</title>
+    <script type="module" crossorigin src="/tvquevedo/assets/show-CBpPR7RR.js"></script>
+    <link rel="modulepreload" crossorigin href="/tvquevedo/assets/utils-BtFFPfyV.js">
+    <link rel="stylesheet" crossorigin href="/tvquevedo/assets/utils-1toQhbXg.css">
+  </head>
+
+  <body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Ir al inicio">
+      <span class="brand__logo">🎬</span>
+      <span class="brand__name">TV QUEVEDO Explorer</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="./">Inicio</a>
+    </nav>
+  </header>
+
+
+    <main class="container">
+      <section class="section" aria-labelledby="detail-title">
+        <p id="detailStatus" class="status" aria-live="polite"></p>
+
+        <article id="showDetail" class="detail" hidden>
+          <header class="detail__head">
+            <img id="showPoster" class="detail__poster" alt="" />
+            <div class="detail__meta">
+              <h1 id="detail-title"></h1>
+              <p id="showMeta" class="muted"></p>
+              <p id="showGenres" class="chips"></p>
+              <a id="showOfficial" class="btn-secondary" target="_blank" rel="noreferrer" hidden>
+                Sitio oficial
+              </a>
+            </div>
+          </header>
+
+          <section class="detail__body" aria-label="Resumen">
+            <h2>Resumen</h2>
+            <div id="showSummary" class="prose"></div>
+          </section>
+        </article>
+      </section>
+
+      <section class="section" aria-labelledby="episodes-title">
+        <div class="section__head">
+          <h2 id="episodes-title">Episodios</h2>
+          <p class="muted">Lista por temporada (cuando aplique).</p>
+        </div>
+
+        <p id="episodesStatus" class="status" aria-live="polite"></p>
+        <div id="episodesList" class="episodes"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <small>Datos: TVMaze API</small>
+    </footer>
+
+  </body>
+</html>
