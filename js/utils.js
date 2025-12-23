@@ -29,7 +29,7 @@ export function showCardHTML(show) {
 
   return `
     <article class="card">
-      <a class="card__link" href="/show.html?id=${show.id}" aria-label="Ver detalle de ${name}">
+      <a class="card__link" href="./show.html?id=${show.id}" aria-label="Ver detalle de ${name}">
         <img class="card__img" src="${img}" alt="Poster de ${name}" loading="lazy" />
         <div class="card__body">
           <h3 class="card__title">${name}</h3>

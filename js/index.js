@@ -1,4 +1,4 @@
-import "../CSS/main.css";
+import "../SASS/main.scss";
 import { searchShows, getTodaySchedule } from "./api.js";
 import { $, formatDateISO, showCardHTML, episodeCardHTML } from "./utils.js";
 
