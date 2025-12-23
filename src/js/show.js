@@ -1,4 +1,4 @@
-import "../SASS/main.scss";
+import "../scss/main.scss";
 import { getShowById, getEpisodesByShowId } from "./api.js";
 import { $, escapeText, groupBySeason } from "./utils.js";
 

@@ -7,7 +7,7 @@ export const api = axios.create({
 
 export async function searchShows(query) {
   const { data } = await api.get("/search/shows", { params: { q: query } });
-  return data; // array: [{ score, show }]
+  return data; 
 }
 
 export async function getTodaySchedule(country, dateISO) {
