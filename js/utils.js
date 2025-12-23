@@ -21,8 +21,7 @@ export function formatDateISO(d = new Date()) {
 export function showCardHTML(show) {
   const name = escapeText(show.name ?? "Sin título");
   const img =
-    show.image?.medium ||
-    "https://via.placeholder.com/210x295?text=No+Image";
+    show.image?.medium || "https://via.placeholder.com/210x295?text=No+Image";
   const rating = show.rating?.average ?? "—";
   const year = show.premiered ? show.premiered.slice(0, 4) : "—";
   const network = show.network?.name || show.webChannel?.name || "—";
@@ -59,10 +58,11 @@ export function episodeCardHTML(item) {
   const airdate = item.airdate ?? "—";
 
   const title = showName ? `${showName} — ${epName}` : epName;
+  const showId = item.show?.id;
 
   return `
     <article class="card">
-      <a class="card__link" href="/show.html?id=${item.show?.id ?? ""}">
+      <a class="card__link" href="${showId ? `./show.html?id=${showId}` : './'}">
         <img class="card__img" src="${img}" alt="Imagen de ${escapeText(title)}" loading="lazy" />
         <div class="card__body">
           <h3 class="card__title">${escapeText(title)}</h3>
